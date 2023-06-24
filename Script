@@ -1,19 +1,19 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Allens Base Raiders Script", HidePremium = false, SaveConfig = true, IntroText = "Allens HUB", ConfigFolder = "public"})
 
-local VapeTab = Window:MakeTab({
-	Name = "Vape",
+local Vapev4Tab = Window:MakeTab({
+	Name = "VapeV4",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
-local RapidTab = Window:MakeTab({
-	Name = "Rapid",
+local RapidFireTab = Window:MakeTab({
+	Name = "RapidFire",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
-RapidTab:AddToggle({
+RapidFireTab:AddButton({
 	Name = "Rapid Fire",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/god86521/base-battles/main/autofire"))()
@@ -21,8 +21,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/god86521/base-battles
 	end    
 })
 
-VapeTab:AddButton({
-	Name = "Vape For Aim assist",
+Vapev4Tab:AddButton({
+	Name = "Vape For Aim assist & swim",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
 		print(Value)
